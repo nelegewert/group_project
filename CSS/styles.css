@@ -1,0 +1,67 @@
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+    font-size: 19px;
+    font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+    font-weight: 300;
+}
+
+.panel {
+  width: 50%;
+  height: 50%;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about {
+    top:0;
+    left:0;
+    background-image: url('../Photos/index_panels/about.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+#committee {
+    background-image: url('../Photos/index_panels/committee.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+#volunteering {
+    top:50%;
+    left:0;
+    background-image: url('../Photos/index_panels/volunteering.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+#successes {
+    top:50%;
+    left:50%;
+    background-image: url('../Photos/index_panels/successes.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 19px;
+}
