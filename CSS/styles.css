@@ -1,31 +1,53 @@
 body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
-  font-weight: 300;
-}
-
-h1 {
-  font-size: 28px;
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
-  font-weight: 300;
-}
-
-h2 {
-    font-size: 19px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
     font-weight: 300;
 }
 
+.title {
+    position: absolute;
+    height: 110px;
+    width: 100%;
+    background-color: RGB(0, 159, 227);
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+h1 {
+    display: inline;
+    font-size: 35px;
+    font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+}
+
+h2 {
+    font-size: 23px;
+    font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+img {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: inline;
+}
+
 .panel {
-  width: 50%;
-  height: 50%;
-  float:left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    width: 50%;
+    height: 50%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #about {
@@ -64,4 +86,14 @@ h2 {
     background-position: center;
     text-align: center;
     font-size: 19px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: RGB(0, 159, 227);
+    color: white;
+    text-align: center;
 }
