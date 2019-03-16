@@ -3,33 +3,101 @@ body {
   font-weight: 200;
   margin: 0;
   height: 100%;
+  padding: 0;
   color: white;
 }
 
-.header {
-  background-color: white;
-  height: 120px;
+body #master_site_wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 0;
+  padding-bottom: 0;
+}
+
+div#masthead_wrapper {
+  display: inline-block;
+  color: white;
+}
+
+.masthead-content-wrapper {
+  background: url("https://s31.postimg.org/655b24muz/hunting.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right center;
+  height: 120px;
+}
+
+.destinations-section-wrapper {
+  width: 50%;
+  height: 0;
+}
+
+.green {
+  border-bottom: 120px solid #00A1DF;
+  border-right: 120px solid transparent;
+  position: absolute;
+  z-index: 0;
+}
+
+.masthead-content {
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+/* Uses Flexbox to align text vertically */
+.title-container {
+  width: 50%%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 120px;
+  z-index: 10;
+}
+
+h2.title {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 50px;
+  line-height: 0.9;
+  padding-left: 20px;
   margin: 0;
 }
 
-.navbar-brand img {
-  float:left;
-  width: 100px;
+h5.subtitle {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
   padding-left: 20px;
-  padding-top: 10px;
+  margin: 0;
 }
 
-.navbar-brand h1 {
-  position: relative;
-  left: 10px;
-  color: white;
+@media screen and (max-width: 850px) {
+  h2.title {
+    font-size: 3em !important;
+  }
 }
 
-.navbar-brand h2 {
-  position: relative;
-  left: 10px;
-  color: white;
+@media screen and (max-width: 1200px) {
+  .title-container {
+    width: 70% !important;
+  }
 }
 
 .column {
@@ -38,12 +106,20 @@ body {
   color: white;
   text-align: center;
   height: 300px;
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
 }
 
-h3:hover {
+.column:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter:  grayscale(0%);
+  -ms-filter:  grayscale(0%);
+  transition: 0.2s;
+}
+
+h3 {
   opacity: 1;
-  transform: scale(1.1, 1.1);
-  transition: transform .2s;
 }
 
 .row {
@@ -68,7 +144,7 @@ h3:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -83,7 +159,7 @@ h3:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -98,7 +174,7 @@ h3:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -113,7 +189,7 @@ h3:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
