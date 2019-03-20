@@ -1,67 +1,224 @@
 body {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  font-weight: 200;
+  margin: 0;
   height: 100%;
   padding: 0;
-  margin: 0;
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
-  font-weight: 300;
+  color: white;
 }
 
-h1 {
-  font-size: 28px;
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
-  font-weight: 300;
+body #master_site_wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-h2 {
-    font-size: 19px;
-    font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
-    font-weight: 300;
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.panel {
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+div#masthead_wrapper {
+  display: inline-block;
+  color: white;
+}
+
+.masthead-content-wrapper {
+  background: url("https://s31.postimg.org/655b24muz/hunting.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right center;
+  height: 120px;
+}
+
+.destinations-section-wrapper {
   width: 50%;
-  height: 50%;
-  float:left;
+  height: 0;
+}
+
+.green {
+  border-bottom: 120px solid #00A1DF;
+  border-right: 120px solid transparent;
+  position: absolute;
+  z-index: 0;
+}
+
+.masthead-content {
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+/* Uses Flexbox to align text vertically */
+.title-container {
+  width: 50%%;
+  position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  height: 120px;
+  z-index: 10;
+}
+
+h2.title {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 50px;
+  line-height: 0.9;
+  padding-left: 20px;
+  margin: 0;
+}
+
+h5.subtitle {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+  h2.title {
+    font-size: 3em !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-container {
+    width: 70% !important;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  color: white;
+  text-align: center;
+  height: 300px;
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+}
+
+.column:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter:  grayscale(0%);
+  -ms-filter:  grayscale(0%);
+  transition: 0.2s;
+}
+
+h3 {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+}
+
+.row:after {
+  display: table;
+  clear: both;
 }
 
 #about {
-    top:0;
-    left:0;
-    background-image: url('../Photos/index_panels/about.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    font-size: 19px;
+  background-image: url("../photos/index_panels/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: inherit;
+  width: 100%;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #committee {
-    background-image: url('../Photos/index_panels/committee.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    font-size: 19px;
-}
-
-#volunteering {
-    top:50%;
-    left:0;
-    background-image: url('../Photos/index_panels/volunteering.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    font-size: 19px;
+  background-image: url("../photos/index_panels/committee.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: inherit;
+  width: 100%;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #successes {
-    top:50%;
-    left:50%;
-    background-image: url('../Photos/index_panels/successes.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    font-size: 19px;
+  background-image: url("../photos/index_panels/successes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: inherit;
+  width: 100%;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#volunteering {
+  background-image: url("../photos/index_panels/volunteering.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: inherit;
+  width: 100%;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+footer {
+  position: inherit;
+  height: 30px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  width: 30px;
+}
+
+.social:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  transition: transform .2s;
 }
