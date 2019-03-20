@@ -12,8 +12,7 @@ a {
 }
 
 body #header {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 
 }
 
@@ -109,6 +108,7 @@ h5.subtitle {
   color: white;
   text-align: center;
   height: 300px;
+  margin: 0px;
   -webkit-filter: grayscale(50%);
   -moz-filter: grayscale(50%);
   -ms-filter: grayscale(50%);
@@ -140,7 +140,7 @@ h3 {
   background-image: url("../photos/index_panels/about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -148,14 +148,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #committee {
   background-image: url("../photos/index_panels/committee.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -163,14 +162,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #successes {
   background-image: url("../photos/index_panels/successes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -178,14 +176,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #volunteering {
   background-image: url("../photos/index_panels/volunteering.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -193,7 +190,6 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media screen and (max-width: 600px) {
