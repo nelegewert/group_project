@@ -1,15 +1,18 @@
 body {
   font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
   font-weight: 200;
-  margin: 0;
+  margin: 0px;
   height: 100%;
-  padding: 0;
+  padding: 0px;
   color: white;
 }
 
-body #master_site_wrapper {
-  margin-top: 0px;
-  margin-bottom: 0px;
+a {
+  color: inherit;
+}
+
+body #header {
+  margin: 0px;
 }
 
 .container-fluid {
@@ -24,48 +27,50 @@ body #master_site_wrapper {
   padding-bottom: 0;
 }
 
-div#masthead_wrapper {
+.grid {
+  margin-top:-5;
+}
+
+div#header-wrap {
   display: inline-block;
   color: white;
 }
 
-.masthead-content-wrapper {
+.header-content {
   background: url("https://s31.postimg.org/655b24muz/hunting.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: right center;
-  height: 120px;
+  height: 110px;
 }
 
-.destinations-section-wrapper {
+.destination {
   width: 50%;
   height: 0;
 }
 
-.green {
+.blue {
   border-bottom: 120px solid #00A1DF;
-  border-right: 120px solid transparent;
+  border-right: 120px solid white;
   position: absolute;
-  z-index: 0;
+  z-index: inherit;
 }
 
-.masthead-content {
+.title {
   width: 75%;
   margin: 0 auto;
 
 }
 
-/* Uses Flexbox to align text vertically */
-.title-container {
+.title-box {
   width: 50%%;
   position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 120px;
-  z-index: 10;
 }
 
 h2.title {
@@ -106,6 +111,7 @@ h5.subtitle {
   color: white;
   text-align: center;
   height: 300px;
+  margin: 0px;
   -webkit-filter: grayscale(50%);
   -moz-filter: grayscale(50%);
   -ms-filter: grayscale(50%);
@@ -137,7 +143,7 @@ h3 {
   background-image: url("../photos/index_panels/about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -145,14 +151,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #committee {
   background-image: url("../photos/index_panels/committee.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -160,14 +165,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #successes {
   background-image: url("../photos/index_panels/successes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -175,14 +179,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #volunteering {
   background-image: url("../photos/index_panels/volunteering.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: inherit;
   width: 100%;
   flex: auto;
@@ -190,7 +193,6 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 3em;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media screen and (max-width: 600px) {
