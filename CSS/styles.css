@@ -1,18 +1,28 @@
-body {
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
-  font-weight: 200;
-  margin: 0px;
+html {
+  width: 100%;
   height: 100%;
+}
+
+body {
+  position: inherit;
+  margin: auto;
+  height: 100%;
+  width:100%;
   padding: 0px;
   color: white;
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  font-weight: 200;
 }
 
 a {
   color: inherit;
 }
 
-body #header {
+#header {
   margin: 0px;
+  height: 140px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .container-fluid {
@@ -27,10 +37,6 @@ body #header {
   padding-bottom: 0;
 }
 
-.grid {
-  margin-top:-5;
-}
-
 div#header-wrap {
   display: inline-block;
   color: white;
@@ -43,34 +49,33 @@ div#header-wrap {
   -o-background-size: cover;
   background-size: cover;
   background-position: right center;
-  height: 110px;
+  height: 116px;
 }
 
 .destination {
-  width: 50%;
+  width: 60%;
   height: 0;
 }
 
 .blue {
-  border-bottom: 120px solid #00A1DF;
-  border-right: 120px solid white;
+  border-bottom: 140px solid #00A1DF;
+  border-right: 140px solid white;
   position: absolute;
   z-index: inherit;
 }
 
 .title {
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
-
 }
 
 .title-box {
-  width: 50%%;
+  width: 60%;
   position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 120px;
+  height: 140px;
 }
 
 h2.title {
@@ -78,7 +83,7 @@ h2.title {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 50px;
+  font-size: 4em;
   line-height: 0.9;
   padding-left: 20px;
   margin: 0;
@@ -88,7 +93,7 @@ h5.subtitle {
   font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 1.25em;
   padding-left: 20px;
   margin: 0;
 }
@@ -105,33 +110,17 @@ h5.subtitle {
   }
 }
 
-.column {
-  float: left;
-  width: 50%;
-  color: white;
-  text-align: center;
-  height: 300px;
-  margin: 0px;
-  -webkit-filter: grayscale(50%);
-  -moz-filter: grayscale(50%);
-  -ms-filter: grayscale(50%);
-}
-
-.column:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter:  grayscale(0%);
-  -ms-filter:  grayscale(0%);
-  transition: 0.2s;
-}
-
-h3 {
-  opacity: 1;
+.grid {
+  margin-top:-5;
+  height: 100%;
+  width: 100%
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0px;
+  min-height: 50%;
 }
 
 .row:after {
@@ -139,18 +128,30 @@ h3 {
   clear: both;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  color: white;
+  text-align: center;
+  margin: 0px auto;
+}
+
+h3 {
+  opacity: 1;
+}
+
 #about {
   background-image: url("../photos/index_panels/about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: inherit;
+  height: 100%;
   width: 100%;
   flex: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #committee {
@@ -158,13 +159,13 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: inherit;
+  height: 100%;
   width: 100%;
   flex: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #successes {
@@ -172,13 +173,13 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: inherit;
+  height: 100%;
   width: 100%;
   flex: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #volunteering {
@@ -186,13 +187,18 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: inherit;
+  height: 100%;
   width: 100%;
   flex: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+  font-size: 4em;
+}
+
+.column:hover {
+  font-size: 1.1em;
+  transition: 0.4s;
 }
 
 @media screen and (max-width: 600px) {
@@ -216,7 +222,7 @@ footer {
 }
 
 .social {
-  width: 30px;
+  width: 35px;
 }
 
 .social:hover {
