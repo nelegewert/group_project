@@ -1,0 +1,23 @@
+footer {
+  position: inherit;
+  height: 30px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  width: 30px;
+}
+
+.social:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  transition: transform .2s;
+}
