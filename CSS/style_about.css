@@ -1,3 +1,63 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #fff;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  /*Hover background colour*/
+  background-color: #00A1DF;
+  /*Text colour*/
+  color: white;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fff;
+  color: black;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+body {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+}
+body #About_us_text{
+  padding:1rem;
+}
+body #Anthony_text{
+  padding:1rem;
+}
+h1{
+  padding-left:1rem;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex:50%;
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+
 footer {
   position: inherit;
   height: 30px;
@@ -11,11 +71,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 .social {
   width: 30px;
 }
-
 .social:hover {
   opacity: 1;
   transform: scale(1.1, 1.1);
