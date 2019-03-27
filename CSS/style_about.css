@@ -1,10 +1,11 @@
 /* Add a black background color to the top navigation */
-.topnav {
+#top.topnav {
   background-color: #fff;
   overflow: hidden;
 }
+
 /* Style the links inside the navigation bar */
-.topnav a {
+#top.topnav a {
   float: left;
   color: #000;
   text-align: center;
@@ -13,17 +14,18 @@
   font-size: 17px;
 }
 /* Change the color of links on hover */
-.topnav a:hover {
+#top.topnav a:hover {
   /*Hover background colour*/
   background-color: #00A1DF;
   /*Text colour*/
   color: white;
 }
 /* Add a color to the active/current link */
-.topnav a.active {
+#top.topnav a.active {
   background-color: #fff;
   color: black;
 }
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -35,17 +37,85 @@
   padding-top: 60px;
 }
 
+/*dropdown*/
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: #fff;
+  //font-family: inherit;
+  margin: 0;
+  font-size: 17px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #00A1DF;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*header*/
+
+.header {
+  text-align: center;
+  color: #00A1DF;
+  font-size: 30px;
+}
+.header h1 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.header p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 body {
   font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
 }
 body #About_us_text{
-  padding:1rem;
+  padding-left:16px;
+  padding-right:16px;
+}
+body #title{
+  color: #00A1DF;
+  font-size: 10px;
 }
 body #Anthony_text{
-  padding:1rem;
+  padding-left:16px;
+  padding-right:16px;
 }
 h1{
-  padding-left:1rem;
+  padding-left:16px;
 }
 .row {
   display: flex;
@@ -54,8 +124,15 @@ h1{
   flex:50%;
 }
 img {
-  max-width:100%;
+  max-width:50%;
   height: auto;
+  border-radius:50%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 footer {
