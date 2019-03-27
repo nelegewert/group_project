@@ -1,3 +1,17 @@
+body {
+  position: inherit;
+  margin: auto;
+  height: 100%;
+  width:100%;
+  padding: 0px;
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+  font-weight: 200;
+}
+
+a {
+  color: inherit;
+}
+
 footer {
   position: inherit;
   height: 30px;
