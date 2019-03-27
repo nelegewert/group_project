@@ -38,7 +38,6 @@ a {
 .topnav {
   background-color: #fff;
   overflow: hidden;
-  padding-bottom: 20px;
 }
 
 .topnav a {
@@ -128,8 +127,6 @@ a {
 
 .column.middle {
   width: 50%;
-  display: inline-grid;
-  align-items: center;
 }
 
 .row-2:after {
@@ -157,24 +154,22 @@ a {
   justify-content: center;
 }
 
-.column {
-  float: left;
-  color: black;
-  display: inline;
-}
-
-.column.left {
+.column-left {
   width: 25%;
 }
-.column.left img {
+.column-left img {
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
-.column.right {
+.column-right {
   width: 75%;
+  float: left;
   display: inline;
-  align-items: center;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .row-3:after {
@@ -193,7 +188,7 @@ a {
   }
 }
 
-/*content-donors*/
+/*donor cards*/
 
 .row-1 {
   margin: 0 -5px;
@@ -209,7 +204,7 @@ a {
   clear: both;
 }
 
-.column {
+.column-1 {
   float: left;
   width: 18%;
   padding: 0 10px;
