@@ -18,6 +18,8 @@ a {
   color: inherit;
 }
 
+/*title and header*/
+
 #header {
   margin: 0px;
   height: 140px;
@@ -109,6 +111,8 @@ h5.subtitle {
     width: 70% !important;
   }
 }
+
+/*grid*/
 
 .grid {
   margin-top:-5;
@@ -206,6 +210,8 @@ h3 {
     width: 100%;
   }
 }
+
+/*footer*/
 
 footer {
   position: inherit;
