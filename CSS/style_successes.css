@@ -91,11 +91,21 @@
 body {
   font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
 }
+body #text{
+  padding-left:16px;
+  padding-right:16px;
+}
+body #title{
+  color: #00A1DF;
+  font-size: 10px;
+}
+h1{
+  padding-left:16px;
+}
 
 /*Images*/
 #photos {
   /* Prevent vertical gaps */
-  line-height: 0;
 
   -webkit-column-count: 5;
   -webkit-column-gap:   0px;
@@ -103,6 +113,8 @@ body {
   -moz-column-gap:      0px;
   column-count:         5;
   column-gap:           0px;
+  padding-left: 16px;
+  padding-right:16px;
 }
 #photos img {
   /* Just in case there are inline attributes */
@@ -161,13 +173,11 @@ body {
   background-color: #00A1DF;
 }
 .container:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .text {
-  display: inline-block;
-  word-break: break-all;
   color: white;
-  font-size: 20px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -176,6 +186,23 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/*.clearfix:after {
+ content: ".";
+ display: block;
+ clear: both;
+ visibility: hidden;
+ line-height: 0;
+ height: 0;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+*/
 
 /*Footer*/
 footer {
