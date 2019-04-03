@@ -24,21 +24,6 @@
   background-color: #fff;
   color: black;
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-/*dropdown*/
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 .dropdown .dropbtn {
   border: none;
   outline: none;
@@ -88,14 +73,26 @@
   padding-top: 10px;
   padding-bottom: 0px;
 }
+
+/*Body*/
 body {
   font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif,sans-serif;
+}
+body #text{
+  padding-left:16px;
+  padding-right:16px;
+}
+body #title{
+  color: #00A1DF;
+  font-size: 10px;
+}
+h1{
+  padding-left:16px;
 }
 
 /*Images*/
 #photos {
   /* Prevent vertical gaps */
-  line-height: 0;
 
   -webkit-column-count: 5;
   -webkit-column-gap:   0px;
@@ -103,6 +100,8 @@ body {
   -moz-column-gap:      0px;
   column-count:         5;
   column-gap:           0px;
+  padding-left: 16px;
+  padding-right:16px;
 }
 #photos img {
   /* Just in case there are inline attributes */
@@ -161,13 +160,11 @@ body {
   background-color: #00A1DF;
 }
 .container:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .text {
-  display: inline-block;
-  word-break: break-all;
   color: white;
-  font-size: 20px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,7 +172,13 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  transition: .5s ease;
+  opacity:0;
 }
+.container:hover .text {
+  opacity: 1;
+}
+
 
 /*Footer*/
 footer {
