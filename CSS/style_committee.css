@@ -11,6 +11,14 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.social {
+  width: 30px;
+}
+.social:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  transition: transform .2s;
+}
 
 .header {
   text-align: center;
