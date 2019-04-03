@@ -109,13 +109,15 @@ a {
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 0px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: black;
 }
 
 .grid-container > div {
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 1em;
   color: black;
 }
