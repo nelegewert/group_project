@@ -131,6 +131,11 @@ a {
   margin: 0px;
 }
 
+.grid-container p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .item1 {
   grid-row: 1 / 1;
 }
