@@ -18,6 +18,8 @@ a {
   color: inherit;
 }
 
+/*title and header*/
+
 #header {
   margin: 0px;
   height: 140px;
@@ -110,6 +112,8 @@ h5.subtitle {
   }
 }
 
+/*grid*/
+
 .grid {
   margin-top:-5;
   height: 100%;
@@ -141,7 +145,7 @@ h3 {
 }
 
 #about {
-  background-image: url("../photos/index_panels/about.jpg");
+  background-image: url("../Photos/index_panels/about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -155,7 +159,7 @@ h3 {
 }
 
 #committee {
-  background-image: url("../photos/index_panels/committee.jpg");
+  background-image: url("../Photos/index_panels/committee.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -169,7 +173,7 @@ h3 {
 }
 
 #successes {
-  background-image: url("../photos/index_panels/successes.jpg");
+  background-image: url("../Photos/index_panels/successes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -183,7 +187,7 @@ h3 {
 }
 
 #volunteering {
-  background-image: url("../photos/index_panels/volunteering.jpg");
+  background-image: url("../Photos/index_panels/volunteering.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -206,6 +210,8 @@ h3 {
     width: 100%;
   }
 }
+
+/*footer*/
 
 footer {
   position: inherit;

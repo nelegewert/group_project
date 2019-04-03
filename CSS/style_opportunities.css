@@ -11,6 +11,7 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 /*header*/
@@ -38,7 +39,6 @@ a {
 .topnav {
   background-color: #fff;
   overflow: hidden;
-  padding-bottom: 20px;
 }
 
 .topnav a {
@@ -103,140 +103,84 @@ a {
   display: block;
 }
 
-/*Content-Volunteer*/
+/*Content-Volunteer-Donate*/
 
-.row-2 {
-  margin: 0 -5px;
-  display: flex;
-  justify-content: center;
-}
-
-.column {
-  float: left;
-  padding: 10px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: black;
-  display: inline;
 }
 
-.column.side {
-  width: 25%;
-}
-
-.column.side img {
-  width: 100%;
-}
-
-.column.middle {
-  width: 50%;
-  display: inline-grid;
-  align-items: center;
-}
-
-.row-2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row-2 b {
-  color: #00A1DF;
-}
-
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-
-/*content-donate*/
-
-.row-3 {
-  margin: 0 -5px;
-  padding-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.column {
-  float: left;
-  color: black;
-  display: inline;
-}
-
-.column.left {
-  width: 25%;
-}
-.column.left img {
-  width: 100%;
-  padding: 0;
-}
-
-.column.right {
-  width: 75%;
-  display: inline;
-  align-items: center;
-}
-
-.row-3:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row-3 b {
-  color: #00A1DF;
-}
-
-@media screen and (max-width: 600px) {
-  .column.left, .column.right {
-    width: 100%;
-  }
-}
-
-/*content-donors*/
-
-.row-1 {
-  margin: 0 -5px;
-  justify-content: center;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.row-1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 18%;
-  padding: 0 10px;
-}
-
-.w3-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+.grid-container > div {
   text-align: center;
-  background-color: #ffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
   color: black;
 }
 
-.container {
-  padding: 2px 16px;
+.grid-container b {
+  color: #00A1DF;
 }
 
-.container h4 {
-  font-size: 1.2em;
+.grid-container h2 {
+  padding: 0px;
+  margin: 0px;
 }
 
-@media screen and (max-width: 600px) {
-  .w3-column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.grid-container p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item1 {
+  grid-row: 1 / 1;
+}
+
+.item2 {
+  grid-row: 2 / 2;
+}
+
+.item3 {
+  grid-row: 3 / 3;
+}
+
+.item4 {
+  grid-row: 4 / 4;
+}
+
+.grid-container h2:hover {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.75em;
+  transition: 0.2s;
+}
+
+/*donor cards*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.text {
+  padding: 0 20px 20px;
+  color: black;
 }
 
 /*footer*/
