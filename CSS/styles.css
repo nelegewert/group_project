@@ -208,6 +208,7 @@ h3 {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    height: 100%;
   }
 }
 
